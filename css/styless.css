@@ -1,7 +1,6 @@
 /* Configurações padrões da página */
 body, html{
     margin: 0;
-    padding: 0;
     font: 16px "Lato", sans-serif;
     color: #777;
     height: 100%;
@@ -21,9 +20,19 @@ h3{
     color: #111;
 }
 
+p{
+    margin-bottom: 20px;
+}
+
 /* Efeito parallax */
-.caixa1, caixa2{
+.caixa1, .caixa2,  .caixa3, .caixa4{
+    position: relative;
     height: 100%;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .caixa1{
@@ -32,4 +41,29 @@ h3{
 
 .caixa2{
     background-image: url(../img/imagem2.jpg);
+}
+
+.caixa3{
+    background-image: url(../img/imagem3.jpg);
+}
+
+.caixa4{
+    background-image: url(../img/imagem4.jpg);
+}
+
+.conteudo-titulo{
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
+
+.conteudo-titulo span.titulo{
+    background-color: #111;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    color: #fff;
+    text-transform: uppercase;
 }
